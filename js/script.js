@@ -1,18 +1,12 @@
 
-  // window.onload = function () {
-  //   document.body.classList.add('loaded_hiding');
-  //   window.setTimeout(function () {
-  //     document.body.classList.add('loaded');
-  //     document.body.classList.remove('loaded_hiding');
-  //   }, 500);
-  // };
   $('.partners-slider').slick({
     dots: false,
     arrows: true,
-    // autoplay: true,
+    lazyLoad: 'ondemand',
     slidesToShow: 6,
     slidesToScroll: 1,
     infinite: true,
+    autoplay: true,
     nextArrow: '<img src="../img/Arrow-next.svg" class= "next" alt="">',
     prevArrow: '<img src="../img/Arrow-prev.svg" class= "prev" alt="">',
     responsive: [
@@ -31,16 +25,6 @@
       }
     ]
   });
-
-
-  
-// var trigger = document.getElementById('toggle');
-// var box = document.getElementById('menu');
-
-// toggle.addEventListener('click', function() {
-//   box.classList.toggle('active');
-// });
-
 
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.menu');
@@ -76,9 +60,12 @@ let drupdownLink = document.querySelector('.nav__user-acount'),
 console.log(drupdownBody);
   $('.header-slider').slick({
     dots: false,
+    lazyLoad: 'ondemand',
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
   });
+
+  
 
   $('.reviewes-slider').slick({
     dots: false,
@@ -87,6 +74,7 @@ console.log(drupdownBody);
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    lazyLoad: 'ondemand',
     prevArrow: $('.prev-reviewes'),
     nextArrow: $('.next-reviewes'),
     responsive: [
