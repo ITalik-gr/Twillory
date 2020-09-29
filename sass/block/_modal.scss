@@ -1,0 +1,81 @@
+
+.modal {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1100vh;
+  transition: .7s all;
+  &__active {
+    margin-top: 0vh;
+  }
+  &-card {
+    position: relative!important;
+    background: #FFFFFF;
+    width: 460px;
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__logo {
+      margin-bottom: 35px;
+    }
+    &__subtitle {
+      font-size: 22px;
+      line-height: 26px;
+      color: #828282;
+      margin-bottom: 17px;
+    }
+    &__title {
+      margin-bottom: 3px;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 49px;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      color: #224697;
+    }
+    &__descr {
+      font-size: 14px;
+      line-height: 16px;
+      color: #828282;
+    }
+    &__form {
+      margin-top: 27px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__btn {
+    width: 198px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #BDBDBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    transition: .3s all;
+    &:hover {
+      color: #FFFFFF;
+      transform: translateY(-5px);
+    }
+    &-active {
+      background: #224697;
+      margin-bottom: 5px;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

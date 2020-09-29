@@ -1,0 +1,101 @@
+
+.reviewes {
+  margin-top: 75px;
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 126.5%;
+    color: #56575F;
+  }
+  &__wrap {
+    margin-top: 32px;
+  }
+  &__top {
+    &-content {
+      padding-bottom: 11px;
+      border-bottom: 1px solid #E3E3E3;
+      display: flex;
+      justify-content: space-between;
+      &__score {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 126.5%;
+        color: #6A6C77;
+        margin-right: 25px;
+        margin-left: 12px;
+      }
+      &__info {
+        display: flex!important;
+        justify-content: space-between!important;
+        align-items: center;
+      }
+    }
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__stars {
+      margin-right: 12px;
+      display: flex;
+    }
+    &__top {
+      display: flex;
+      align-items: center;
+    }
+    &__body {
+      margin-top: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__user {
+      margin-right: 12px;
+    }
+    &__info {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+    &__text {
+      &__title {
+        max-width: 245px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 126.5%;
+        color: #56575F;
+      }
+    }
+    &__stars {
+      margin-right: 15px;
+    }
+    &__date {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 126.5%;
+      color: #828282;
+    }
+    &__quote {  
+      &__text {
+        margin-left: 12px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 126.5%;
+        color: #6A6C77;
+        p {
+          max-width: 169px;
+        }
+      } 
+      &__sign {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 126.5%;
+        color: #6A6C77;
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+
+@media (max-width: 1400px) { //1200
+  .header {
+    &__title {
+      font-size: 37px;
+      line-height: 36px;
+    }
+    &__image {
+      width: 40%;
+    }
+    &__block {
+      width: 484px;
+      height: 276px;
+    }
+  }
+}
+
+@media (max-width: 1200px) { //992
+  .nav {
+    &__list {
+      &__item {
+        margin-right: 25px;
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .product {
+    &__wrap {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &-cart {
+      margin-bottom: 50px;
+    }
+  }
+  .best-product {
+    &__wrap {
+      justify-content: space-around;
+    }
+  }
+  .footer {
+    &__wrap {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__block {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 992px) { //768 
+  .nav {
+    &__list {
+      display: none;
+    }
+  }
+  .burger {
+    display: flex;
+  }
+  .partners {
+    &__subtitle {
+      font-size: 16px;
+    }
+    &-slider {
+      &__card {
+        img {
+          max-width: 75%;
+        }
+      }
+    }
+  }
+  .reviewes {
+    &-card {
+      &__text {
+        &__title {
+          font-size: 16px;
+        }
+      }
+      &__quote{
+        &__apostrophe {
+          display: none;
+          img {
+            max-width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) { //576 
+  .header {
+    &__title {
+      font-size: 33px;
+      line-height: 30px;
+    }
+    &__subtitle {
+      font-size: 21px;
+      line-height: 22px;
+    }
+    &__block {
+      width: 334px;
+      height: 246px;
+    }
+    &__btn {
+      font-size: 12px;
+      width: 271px;
+      margin-top: 26px;
+    }
+  }
+  .partners {
+    .slick-list {
+      margin-left: 20px;
+  }
+  }
+  .reviewes {
+    &__title {
+      font-size: 11px;
+    }
+    &__top-content {
+      align-items: center;
+      &__score {
+        font-size: 10px;
+      }
+    }
+  }
+  .best-product {
+    &__title {
+      font-size: 21px;
+    }
+  }
+}
+
+@media (max-width: 576px)  { //320
+  .nav {
+    &__tools {
+      display: none;
+    }
+    &__logo {
+      img {
+        max-width: 80%;
+      }
+    }
+    &__info {
+      &-top {
+        &__text {
+          font-size: 10px;
+        }
+      }
+      &-bottom {
+        &__text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .header {
+    &__image {
+      width: 25%;
+    }
+    &__btn {
+      width: 170px;
+      font-size: 8px;
+      margin-top: 20px;
+      height: 38px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &__block {
+      height: 206px;
+    }
+  }
+  .partners {
+    &__subtitle {
+      font-size: 12px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+  .next-reviewes {
+    display: none;
+  }
+  .prev-reviewes {
+    display: none;
+  }
+  .reviewes {
+    &__top-content {
+      &__stars {
+        display: none;
+        a {
+          img {
+            max-width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    &__wrap {
+      flex-direction: column;
+      justify-content: end;
+      // align-items: center; 
+    }
+  }
+  .modal {
+    &-card {
+      width: 270px;
+      height: 362px;
+    }
+  }
+  .menu {
+    &__list {
+      &__item {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .dropdown {
+    &-content {
+      padding: 20px 10px;
+      z-index: 1;
+      margin-left: 10px;
+  
+    }
+  }
+}

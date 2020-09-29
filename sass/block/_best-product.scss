@@ -1,0 +1,21 @@
+
+.best-product {
+  margin-top: 50px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .product-card {
+      margin-bottom: 50px;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 126.5%;
+    color: #495057;
+  }
+}
